@@ -1,0 +1,47 @@
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\bin\Debug\Çalışma 2.exe.config
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\bin\Debug\Çalışma 2.exe
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\bin\Debug\Çalışma 2.pdb
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csprojAssemblyReference.cache
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form1.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Properties.Resources.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.GenerateResource.cache
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.CoreCompileInputs.cache
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.exe
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.pdb
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form2.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form3.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\bin\Debug\MySql.Data.dll
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.CopyComplete
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form4.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form5.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form6.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form7.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.zimmet.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.kiralama.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.BisikletSecme.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.KisiSecme.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.ZimmetBisiklet.resources
+C:\Users\siyar\source\repos\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Kiradakiler.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\bin\Debug\Çalışma 2.exe.config
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\bin\Debug\Çalışma 2.exe
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\bin\Debug\Çalışma 2.pdb
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.AssemblyReference.cache
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.BisikletSecme.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form1.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form2.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form3.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form4.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form5.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form6.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Form7.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Kiradakiler.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.KisiSecme.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.zimmet.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.kiralama.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.Properties.Resources.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma_2.ZimmetBisiklet.resources
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.GenerateResource.cache
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.CoreCompileInputs.cache
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.csproj.CopyComplete
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.exe
+C:\Users\caner\Desktop\Çalışma 2\Çalışma 2\obj\Debug\Çalışma 2.pdb

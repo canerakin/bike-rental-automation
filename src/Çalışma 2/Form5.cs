@@ -1,0 +1,196 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
+namespace Çalışma_2
+{
+    public partial class Form5 : Form
+    {
+        MySqlConnection con = new MySqlConnection("Server=localhost; Database=bisiklet_kiralama;Uid=root;Pwd='';");
+
+        public Form5()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 frm1 = new Form2();
+            frm1.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                
+
+
+                    if (con.State == ConnectionState.Closed)
+                        con.Open();
+
+                if (textBox5.Text == string.Empty)
+                {
+                    string ekle = "INSERT INTO istasyon(istasyon_kodu,istasyon_adi,mahalle,sokak) values (@istasyon_kodu,@istasyon_adi,@mahalle,@sokak)";
+                    MySqlCommand komut = new MySqlCommand(ekle, con);
+
+                    komut.Parameters.AddWithValue("@istasyon_kodu", textBox1.Text);
+                    komut.Parameters.AddWithValue("@istasyon_adi", textBox2.Text);
+                    komut.Parameters.AddWithValue("@mahalle", textBox3.Text);
+                    komut.Parameters.AddWithValue("@sokak", textBox4.Text);
+
+
+
+
+
+                    komut.ExecuteNonQuery();
+                    con.Close();
+                    griddoldur();
+                }
+
+                else
+                {
+                    string ekle = "UPDATE istasyon SET istasyon_id=@istasyon_id, istasyon_kodu=@istasyon_kodu , istasyon_adi=@istasyon_adi, mahalle=@mahalle , sokak=@sokak WHERE  istasyon_id=@istasyon_id";
+
+                    MySqlCommand komut = new MySqlCommand(ekle, con);
+
+                    komut.Parameters.AddWithValue("@istasyon_id", textBox5.Text);
+                    komut.Parameters.AddWithValue("@istasyon_kodu", textBox1.Text);
+                    komut.Parameters.AddWithValue("@istasyon_adi", textBox2.Text);
+                    komut.Parameters.AddWithValue("@mahalle", textBox3.Text);
+                    komut.Parameters.AddWithValue("@sokak", textBox4.Text);
+
+                    komut.ExecuteNonQuery();
+
+                    MySqlDataAdapter da = new MySqlDataAdapter("SELECT* from istasyon", con);
+                    DataSet dt = new DataSet();
+
+
+                    da.Fill(dt, "istasyon");
+                    dataGridView1.DataSource = dt.Tables["istasyon"];
+                    dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                    MessageBox.Show("İstasyon Güncellendi.");
+                    con.Close();
+                    griddoldur();
+
+
+                }
+            }
+            catch (Exception )
+            {
+               
+            
+            }
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            griddoldur();
+            dataGridView1.Columns[0].Visible = false;
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+
+        }
+
+        void griddoldur()
+        {
+
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * from istasyon", con);
+            DataSet dt = new DataSet();
+
+            con.Open();
+
+            da.Fill(dt, "istasyon");
+            dataGridView1.DataSource = dt.Tables["istasyon"];
+            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+
+
+            con.Close();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            foreach (DataGridViewRow drow in dataGridView1.SelectedRows)
+            {
+                int istasyon_id = Convert.ToInt32(drow.Cells[0].Value);
+                KayıtSil(istasyon_id);
+            }
+            griddoldur();
+
+        }
+
+        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            int currentMouseOverRow = dataGridView1.HitTest(e.X, e.Y).RowIndex;
+
+
+        }
+
+
+
+        void KayıtSil(int istasyon_id)
+        {
+            try
+            {
+
+                string sql = "DELETE FROM istasyon WHERE istasyon_id=@istasyon_id";
+                MySqlCommand komut = new MySqlCommand(sql, con);
+                komut.Parameters.AddWithValue("@istasyon_id", istasyon_id);
+                con.Open();
+                komut.ExecuteNonQuery();
+                con.Close();
+            }
+            catch(Exception hata)
+            {
+                MessageBox.Show("Seçilen istasyona bisiklet veya bisikletler zimmetli. Önce zimmeti kaldırın." + hata.Message);
+                con.Close();
+
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            textBox5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            textBox1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            textBox2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            textBox3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            textBox4.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+          
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+        }
+
+        private void Form5_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form2 frm1 = new Form2();
+            frm1.Show();
+            this.Hide();
+        }
+    }
+}
